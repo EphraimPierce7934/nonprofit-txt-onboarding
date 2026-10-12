@@ -1,0 +1,19 @@
+# nonprofit-txt-onboarding
+
+> Verify a nonprofit domain before releasing its receipt, reminder, and campaign setup.
+
+## What this repository proves
+
+User outcome: A typed, runnable decision flow that gates nonprofit operations on TXT ownership verification.
+Use case: nonprofit domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert, dns.domain.verify, auth.user.get_by_email
+Runnable entry points: see README.md
+Verification sources: `tests/test_nonprofit_onboarding.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

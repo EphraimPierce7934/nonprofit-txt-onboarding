@@ -1,0 +1,12 @@
+[project]
+name = "nonprofit-domain-onboarding"
+version = "0.1.0"
+description = "TXT-backed nonprofit onboarding with receipts, reminders, and campaign reporting."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
